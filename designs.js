@@ -1,8 +1,3 @@
-// Select color input
-// Select size input
-
-// When size is submitted by the user, call makeGrid()
-
 /**
  * @description Create a grid of the weight and height specified
  * @param event Event object
