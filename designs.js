@@ -25,8 +25,14 @@ function makeGrid(event, weight, height){
  */
 function draw(){
 	$('td').click(function(){
-		const color = $('#colorPicker').val();
-		$(this).css('background-color', color);
+		let color = $('#colorPicker').val();
+
+		let currentStyle = $(this).attr('style');
+		if(currentStyle == 'background-color: ' + color){
+			color = "white";
+		}
+
+		$(this).attr('style', 'background-color: ' + color);
 	});
 }
 
