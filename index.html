@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Pixel Art Maker!</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,11 +12,13 @@
 
     <h2>Choose Grid Size</h2>
     <form id="sizePicker">
-        Grid Height:
-        <input type="number" id="inputHeight" name="height" min="1" value="1">
-        Grid Width:
-        <input type="number" id="inputWeight" name="width" min="1" value="1">
-        <input type="submit">
+        <div class="grid-dimension">
+            Grid Height: <input type="number" id="inputHeight" name="height" min="1" value="1">
+        </div>
+        <div class="grid-dimension">
+            Grid Width: <input type="number" id="inputWeight" name="width" min="1" value="1">
+        </div>
+        <input type="submit" value="Create Grid">
     </form>
 
     <h2>Pick A Color</h2>
